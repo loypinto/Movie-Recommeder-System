@@ -23,9 +23,9 @@ def recommend(movie):
     return recommended_movies, recommended_movies_posters
 
 # Load the movie dictionary and similarity matrix
-movies_dict = pickle.load(open(r'C:\Users\ASUS\OneDrive\Desktop\StrealitPro\movie_dict.pkl', 'rb'))
+movies_dict = pickle.load(open(r'movie_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
-similarity = pickle.load(open(r'C:\Users\ASUS\OneDrive\Desktop\StrealitPro\similarity.pkl', 'rb'))
+similarity = pickle.load(open(r'similarity.pkl', 'rb'))
 
 # Streamlit app title
 st.title('Movie Recommender System')
